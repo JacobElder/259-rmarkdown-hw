@@ -49,6 +49,12 @@ stim_labels <- c("Fallon","Feist","Pentatonix","Science","Rube","Plane","Dogs")
 auc <- auc %>% mutate(stim = factor(stim, levels = stim_levels, labels = stim_labels))
 ```
 
+```
+Matlab
+```
+
+
+
 ## STEP 2: Read in participant info data 
 
 Wrangle the ppt info data so that you can merge it into the auc data. Drop any data where the AUC values are missing. In the final, merged data, make the `watched` variable is coded as a factor with levels "seen" (1), "not seen" (2), "not sure" (3). Write the cleaned file to `data_cleaned/`. 
